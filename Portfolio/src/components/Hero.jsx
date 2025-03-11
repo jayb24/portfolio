@@ -30,17 +30,17 @@ const Hero = () => (
           
           {/* Action Buttons */}
           <div className="flex items-center gap-4">
-            <a href="/resume.pdf" className="flex items-center gap-2 border-2 border-white px-3 py-2 rounded-lg hover:bg-white hover:text-black transition-colors">
+            <a href="/resume.pdf" className="flex items-center gap-2 border-2 border-white px-3 py-2 rounded-[8px] hover:bg-white hover:text-black transition-colors group">
               Download Resume
-              <img src={download} alt="download" className="w-5 h-5" /> 
+              <img src={download} alt="download" className="w-5 h-5 group-hover:invert" /> 
             </a>
             
-            <a href="https://linkedin.com/jay" className="flex items-center border-2 border-white text-black p-2 rounded-lg hover:bg-white transition-colors">
-              <img src={linkedin} alt="linkedin" className="w-6 h-6" />
+            <a href="https://linkedin.com/jay" className="flex items-center border-2 border-white text-black p-2 rounded-[8px] hover:bg-white transition-colors group">
+              <img src={linkedin} alt="linkedin" className="w-6 h-6 group-hover:invert" />
             </a>
             
-            <a href="https://github.com/jayb24" className="flex items-center border-2 border-white text-black p-2 rounded-lg hover:bg-white transition-colors">
-              <img src={github} alt="github" className="w-6 h-6" />
+            <a href="https://github.com/jayb24" className="flex items-center border-2 border-white text-black p-2 rounded-[8px] hover:bg-white transition-colors group">
+              <img src={github} alt="github" className="w-6 h-6 group-hover:invert" />
             </a>
           </div>
         </div>

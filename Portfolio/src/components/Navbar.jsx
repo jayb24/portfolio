@@ -1,10 +1,29 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { logo, menu, close } from '../assets';
 import { navLinks } from '../constants';
 
 const Navbar = () => {
     const [toggle, setToggle] = useState(false);
-    
+    const [activeLink, setActiveLink] = useState('');
+
+    // Update the active link based on the current hash
+    useEffect(() => {
+        const handleHashChange = () => {
+            setActiveLink(window.location.hash);
+        };
+
+        // Set the initial active link
+        handleHashChange();
+
+        // Listen for hash changes
+        window.addEventListener('hashchange', handleHashChange);
+
+        // Cleanup the event listener
+        return () => {
+            window.removeEventListener('hashchange', handleHashChange);
+        };
+    }, []);
+
     return (
         <div className="w-full flex justify-center">
             <nav className="w-full max-w-[1200px] mx-auto flex py-6 px-4 md:px-40 justify-between items-center">
@@ -18,7 +37,15 @@ const Navbar = () => {
                             key={nav.id}
                             className={`font-roboto font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}
                         >
-                            <a href={`#${nav.id}`}>{nav.title}</a>
+                            <a 
+                                href={`#${nav.id}`}
+                                style={{ 
+                                    borderBottom: activeLink === `#${nav.id}` ? '4px solid #0099FF' : 'none',
+                                    paddingBottom: '3px'
+                                }}
+                            >
+                                {nav.title}
+                            </a>
                         </li>
                     ))}
                 </ul>
@@ -42,7 +69,15 @@ const Navbar = () => {
                                     key={nav.id}
                                     className={`font-roboto font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white`}
                                 >
-                                    <a href={`#${nav.id}`}>{nav.title}</a>
+                                    <a 
+                                        href={`#${nav.id}`}
+                                        style={{ 
+                                            borderBottom: activeLink === `#${nav.id}` ? '4px solid #0099FF' : 'none',
+                                            paddingBottom: '3px'
+                                        }}
+                                    >
+                                        {nav.title}
+                                    </a>
                                 </li>
                             ))}
                         </ul>
