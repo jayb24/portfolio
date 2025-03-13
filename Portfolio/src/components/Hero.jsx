@@ -34,6 +34,10 @@ const Hero = () => (
               href="/botha_resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
+              onClick={(e) => {
+                e.preventDefault();
+                window.open('/botha_resume.pdf', '_blank', 'noopener,noreferrer');
+              }}
               className="flex items-center gap-1 border-2 text-xs border-white px-2 py-2 rounded-[8px] hover:bg-white hover:text-black transition-colors group"
             >
               View Resume
