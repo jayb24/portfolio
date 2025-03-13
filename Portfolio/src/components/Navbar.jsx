@@ -25,10 +25,10 @@ const Navbar = () => {
     }, []);
 
     return (
-        <div className="w-full flex justify-center">
-            <nav className="w-full max-w-[1200px] mx-auto flex py-6 px-4 md:px-40 justify-between items-center">
+        <div className="w-full flex justify-center px-6 sm:px-6 md:px-0">
+            <nav className="w-full mx-auto flex py-3 md:px-6 justify-between items-center">
                 {/* Logo */}
-                <img src={logo} alt="profile picture" className="w-[50px] h-[50px]" />
+                <img src={logo} alt="logo" className="w-[50px] h-[50px]" />
                 
                 {/* Desktop Navigation (Hidden on smaller screens) */}
                 <ul className="list-none md:flex hidden justify-end items-center flex-1">
@@ -61,7 +61,7 @@ const Navbar = () => {
 
                     {/* Mobile Menu */}
                     <div
-                        className={`${toggle ? 'flex' : 'hidden'} p-6  absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
+                        className={`${toggle ? 'flex' : 'hidden'} p-6 absolute top-20 right-0 mx-4 my-2 min-w-[140px] rounded-xl sidebar`}
                     >
                         <ul className="list-none flex flex-col justify-end items-center flex-1">
                             {navLinks.map((nav, index) => (

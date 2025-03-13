@@ -3,7 +3,7 @@ import { profile, github, linkedin, download, location } from "../assets";
 const Hero = () => (
   <section id="home" className="flex flex-col w-full bg-black text-white py-16">
     {/* Use max width and margin auto to center content like navbar */}
-    <div className="max-w-4xl mx-auto px-6">
+    <div className="mx-auto px-8">
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
         {/* Profile Image - centered on mobile */}
         <div className="flex-shrink-0 flex justify-center w-full md:w-auto md:justify-start">

@@ -1,29 +1,26 @@
-import styles from "./style";
 import { Navbar, Hero, TechStack, Projects } from "./components";
 
 const App = () => (
-  <div className= "bg-black w-full overflow-hidden">
-    <div className={`${styles.paddingX} ${styles.flexCenter}`}>
-      <div className={`${styles.boxWidth}`}>
+  <div className="bg-black w-full overflow-hidden">
+    {/* Main container to control the max width consistently */}
+    <div className="md:px-40 mx-auto">
+      {/* Navbar Section */}
+      <div className="w-full">
         <Navbar />
       </div>
-    </div>
 
-    <div className={`bg-black ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
+      {/* Hero Section */}
+      <div className="w-full">
         <Hero />
       </div>
-    </div>
 
-    <div className={`bg-black${styles.paddingX} ${styles.flexStart}`}>
-      <div className={`${styles.boxWidth}`}>
+      {/* Content Sections */}
+      <div className="w-full">
         <TechStack />
         <Projects />
       </div>
     </div>
-
   </div>
 );
 
-
-export default App
+export default App;
