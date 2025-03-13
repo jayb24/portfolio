@@ -18,6 +18,7 @@ import python from './python.svg';
 import react from './react.svg';
 import tailwindcss from './tailwindcss.svg';
 import typescript from './typescript.svg';
+import Eye from './Eye.svg';
 
 
 export {
@@ -40,5 +41,6 @@ export {
     python,
     react,
     tailwindcss,
-    typescript
+    typescript,
+    Eye
 }

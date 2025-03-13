@@ -1,4 +1,4 @@
-import { profile, github, linkedin, download, location } from "../assets";
+import { profile, github, linkedin, location, Eye } from "../assets";
 
 const Hero = () => (
   <section id="home" className="flex flex-col w-full bg-black text-white py-16">
@@ -29,15 +29,15 @@ const Hero = () => (
           </p>
           
           {/* Action Buttons */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <a 
               href="/botha_resume.pdf" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="flex items-center gap-2 border-2 text-xs border-white px-3 py-2 rounded-[8px] hover:bg-white hover:text-black transition-colors group"
+              className="flex items-center gap-1 border-2 text-xs border-white px-2 py-2 rounded-[8px] hover:bg-white hover:text-black transition-colors group"
             >
               View Resume
-              <img src={download} alt="view" className="w-3 h-3 group-hover:invert" /> 
+              <img src={Eye} alt="view" className="w-4 h-3 group-hover:invert" /> 
             </a>
             
             <a 
