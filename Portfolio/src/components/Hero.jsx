@@ -30,9 +30,14 @@ const Hero = () => (
           
           {/* Action Buttons */}
           <div className="flex items-center gap-4">
-            <a href="/resume.pdf" className="flex items-center gap-2 border-2 text-xs border-white px-3 py-2 rounded-[8px] hover:bg-white hover:text-black transition-colors group">
-              Download Resume
-              <img src={download} alt="download" className="w-3 h-3 group-hover:invert" /> 
+            <a 
+              href="/botha_resume.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 border-2 text-xs border-white px-3 py-2 rounded-[8px] hover:bg-white hover:text-black transition-colors group"
+            >
+              View Resume
+              <img src={download} alt="view" className="w-3 h-3 group-hover:invert" /> 
             </a>
             
             <a 
