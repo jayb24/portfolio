@@ -18,7 +18,7 @@ const Hero = () => (
           <h1 className="text-roboto text-3xl font-medium mb-4">Hi, I'm Jayden Botha</h1>
           
           {/* Location */}
-          <div className="flex text-sm eitems-center mb-3">
+          <div className="flex text-sm items-center mb-3">
             <img src={location} alt="location" className="w-4 h-4 mr-2" />
             <span>Orlando, FL</span>
           </div>
@@ -35,11 +35,21 @@ const Hero = () => (
               <img src={download} alt="download" className="w-3 h-3 group-hover:invert" /> 
             </a>
             
-            <a href="https://linkedin.com/jay" className="flex items-center border-2 border-white text-black p-2 rounded-[8px] hover:bg-white transition-colors group">
+            <a 
+              href="https://linkedin.com/in/jayden-botha-14274b352" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center border-2 border-white text-black p-2 rounded-[8px] hover:bg-white transition-colors group"
+            >
               <img src={linkedin} alt="linkedin" className="w-4 h-4 group-hover:invert" />
             </a>
             
-            <a href="https://github.com/jayb24" className="flex items-center border-2 border-white text-black p-2 rounded-[8px] hover:bg-white transition-colors group">
+            <a 
+              href="https://github.com/jayb24" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="flex items-center border-2 border-white text-black p-2 rounded-[8px] hover:bg-white transition-colors group"
+            >
               <img src={github} alt="github" className="w-4 h-4 group-hover:invert" />
             </a>
           </div>
