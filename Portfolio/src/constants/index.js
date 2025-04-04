@@ -33,3 +33,27 @@ export const techStack = [
     { name: 'Node.js', icon: nodejs },
     { name: 'Figma', icon: figma },
 ];
+
+export const projects = [
+    {
+      title: "CarLogix",
+      description: "A full stack application for car enthusiasts to log their car's performance and maintenance history.",
+      tech: ["React", "Redux", "Tailwind CSS", "Stripe API"],
+      image: "/api/placeholder/400/300",
+      link: "#"
+    },
+    {
+      title: "Weather Dashboard",
+      description: "Real-time weather application that displays current conditions and 5-day forecasts for any location.",
+      tech: ["JavaScript", "OpenWeather API", "Chart.js"],
+      image: "/api/placeholder/400/300",
+      link: "#"
+    },
+    {
+      title: "Task Management App",
+      description: "A Kanban-style task management application with drag-and-drop functionality and user authentication.",
+      tech: ["React", "Firebase", "Tailwind CSS"],
+      image: "/api/placeholder/400/300",
+      link: "#"
+    },
+];
