@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
+      borderWidth: {
+        '1.5': '1.5px',
+      }
     },
     screens: {
       xs: "480px",

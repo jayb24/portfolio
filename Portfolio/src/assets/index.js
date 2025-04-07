@@ -19,6 +19,8 @@ import react from './react.svg';
 import tailwindcss from './tailwindcss.svg';
 import typescript from './typescript.svg';
 import Eye from './Eye.svg';
+import carlogix_mock from './carlogix_mock.png';
+import scubuddies_mock from './scubuddies_mock.png';
 
 
 export {
@@ -42,5 +44,7 @@ export {
     react,
     tailwindcss,
     typescript,
-    Eye
+    Eye,
+    carlogix_mock,
+    scubuddies_mock
 }

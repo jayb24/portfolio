@@ -1,17 +1,22 @@
 import { projects } from '../constants';
 
 const ProjectCard = ({ title, description, tech, image, link }) => (
-  <div className="bg-gray-800 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
-    <div className="h-48 bg-gray-700 overflow-hidden">
+  <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+    <div className="h-48 bg-gray-950 overflow-hidden">
       {image ? (
         <img 
-          src={image} 
-          alt={title} 
-          className="w-full h-full object-cover"
+        src={image} 
+        alt={title}
+        width="800"
+        height="450"
+        loading="lazy"
+        className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+        srcSet={`${image} 800w, ${image.replace('.', '-sm.')} 400w`}
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       ) : (
         <div className="w-full h-full flex items-center justify-center bg-gray-700">
-          <span className="text-gray-500">{title}</span>
+          <span className="text-white">{title}</span>
         </div>
       )}
     </div>
@@ -48,7 +53,7 @@ const Projects = () => {
         <div className="w-full h-0.5 bg-white mb-3"></div>
       </div>
       
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="mt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

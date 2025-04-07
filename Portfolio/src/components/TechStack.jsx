@@ -9,7 +9,7 @@ const TechStack = () => (
       {techStack.map((tech, index) => (
         <div 
           key={index} 
-          className="flex items-center p-2 hover:bg-blue-500 border-white border-2 rounded-lg transition-all duration-300 hover:scale-105 transform-gpu group"
+          className="flex items-center p-2 hover:bg-blue-500 border-white border-1.5 rounded-lg transition-all duration-300 hover:scale-105 transform-gpu group"
         >
           <img src={tech.icon} alt={tech.name} className="w-6 h-6 mr-2" />
           <span className="text-sm text-white">{tech.name}</span>

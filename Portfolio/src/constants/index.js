@@ -1,4 +1,4 @@
-import { c, css, figma, git, html, java, javaScript, nodejs, python, react, tailwindcss, typescript } from "../assets";
+import { c, css, figma, git, html, java, javaScript, nodejs, python, react, tailwindcss, typescript, carlogix_mock, logo, scubuddies_mock } from "../assets";
 
 export const navLinks = [
     {
@@ -37,23 +37,23 @@ export const techStack = [
 export const projects = [
     {
       title: "CarLogix",
-      description: "A full stack application for car enthusiasts to log their car's performance and maintenance history.",
-      tech: ["React", "Redux", "Tailwind CSS", "Stripe API"],
-      image: "/api/placeholder/400/300",
-      link: "#"
+      description: "A full stack application and mobile app for users to track their vehicles maintainance needs.",
+      tech: ["React", "Flutter", "MongoDB", "Express", "Node.js", "Bootstrap"],
+      image: carlogix_mock,
+      link: "http://carlogix.xyz"
     },
     {
-      title: "Weather Dashboard",
-      description: "Real-time weather application that displays current conditions and 5-day forecasts for any location.",
-      tech: ["JavaScript", "OpenWeather API", "Chart.js"],
-      image: "/api/placeholder/400/300",
-      link: "#"
+      title: "ScuBuddies",
+      description: "Collaborative web application for scuba divers to find buddies and keep contacts.",
+      tech: ["JavaScript", "PHP", "MySQL", "HTML/CSS"],
+      image: scubuddies_mock,
+      link: "http://scubuddies.xyz"
     },
     {
-      title: "Task Management App",
-      description: "A Kanban-style task management application with drag-and-drop functionality and user authentication.",
-      tech: ["React", "Firebase", "Tailwind CSS"],
-      image: "/api/placeholder/400/300",
-      link: "#"
+      title: "Portfolio",
+      description: "My personal portfolio website.",
+      tech: ["React", "TailwindCSS", "Vite"],
+      image: logo,
+      link: "#home"
     },
 ];

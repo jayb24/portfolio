@@ -38,7 +38,7 @@ const Hero = () => (
                 e.preventDefault();
                 window.open('/botha_resume.pdf', '_blank', 'noopener,noreferrer');
               }}
-              className="flex items-center gap-1 border-2 text-xs border-white px-2 py-2 rounded-[8px] hover:bg-blue-500  hover:scale-110 transition-colors group"
+              className="flex items-center gap-1 border-1.5 text-xs border-white px-2 py-2 rounded-[8px] hover:bg-blue-500  hover:scale-110 transition-colors group"
             >
               View Resume
               <img src={Eye} alt="view" className="w-4 h-3" /> 
@@ -48,7 +48,7 @@ const Hero = () => (
               href="https://linkedin.com/in/jayden-botha-14274b352" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex items-center border-2 border-white text-black p-2 rounded-[8px] hover:bg-blue-500 hover:scale-110 transition-colors group"
+              className="flex items-center border-1.5 border-white text-black p-2 rounded-[8px] hover:bg-blue-500 hover:scale-110 transition-colors group"
             >
               <img src={linkedin} alt="linkedin" className="w-4 h-4" />
             </a>
@@ -57,7 +57,7 @@ const Hero = () => (
               href="https://github.com/jayb24" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="flex items-center border-2 border-white text-black p-2 rounded-[8px] hover:bg-blue-500 hover:scale-110 transition-colors group"
+              className="flex items-center border-1.5 border-white text-black p-2 rounded-[8px] hover:bg-blue-500 hover:scale-110 transition-colors group"
             >
               <img src={github} alt="github" className="w-4 h-4" />
             </a>
