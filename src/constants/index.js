@@ -1,4 +1,4 @@
-import { c, css, figma, git, html, java, javaScript, nodejs, python, react, tailwindcss, typescript, carlogix_mock, logo, scubuddies_mock } from "../assets";
+import { c, css, figma, git, html, Java, javaScript, nodejs, python, react, tailwindcss, typescript, carlogix_mock, logo, scubuddies_mock } from "../assets";
 
 export const navLinks = [
     {
@@ -20,7 +20,7 @@ export const navLinks = [
 ];
 
 export const techStack = [
-    { name: 'Java', icon: java },
+    { name: 'Java', icon: Java },
     { name: 'JavaScript', icon: javaScript },
     { name: 'TypeScript', icon: typescript },
     { name: 'C/C++', icon: c },
