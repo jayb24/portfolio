@@ -11,7 +11,7 @@ import css from './css.svg';
 import figma from './figma.svg';
 import git from './git.svg';
 import html from './html.svg';
-import java from './java.svg';
+import Java from './Java.svg';
 import javaScript from './javaScript.svg';
 import nodejs from './nodejs.svg';
 import python from './python.svg';
@@ -37,7 +37,7 @@ export {
     figma,
     git,
     html,
-    java,
+    Java,
     javaScript,
     nodejs,
     python,
