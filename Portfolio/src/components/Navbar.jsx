@@ -23,6 +23,18 @@ const Navbar = () => {
             window.removeEventListener('hashchange', handleHashChange);
         };
     }, []);
+    
+    // Handle click on nav item
+    const handleNavClick = (navId) => {
+        // If it's the resume link, open in a new tab
+        if (navId === 'resume') {
+            window.open('/botha_resume.pdf', '_blank', 'noopener,noreferrer');
+            return;
+        }
+        
+        // Otherwise use regular navigation
+        window.location.href = `#${navId}`;
+    };
 
     return (
         <div className="w-full flex justify-center px-6 sm:px-6 md:px-0">
@@ -39,6 +51,12 @@ const Navbar = () => {
                         >
                             <a 
                                 href={`#${nav.id}`}
+                                onClick={(e) => {
+                                    if (nav.id === 'resume') {
+                                        e.preventDefault();
+                                        handleNavClick(nav.id);
+                                    }
+                                }}
                                 style={{ 
                                     borderBottom: activeLink === `#${nav.id}` ? '4px solid #0099FF' : 'none',
                                     paddingBottom: '3px'
@@ -71,6 +89,13 @@ const Navbar = () => {
                                 >
                                     <a 
                                         href={`#${nav.id}`}
+                                        onClick={(e) => {
+                                            if (nav.id === 'resume') {
+                                                e.preventDefault();
+                                                handleNavClick(nav.id);
+                                            }
+                                            setToggle(false);
+                                        }}
                                         style={{ 
                                             borderBottom: activeLink === `#${nav.id}` ? '4px solid #0099FF' : 'none',
                                             paddingBottom: '3px'

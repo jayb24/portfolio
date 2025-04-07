@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { Navbar, Hero, TechStack, Projects } from "./components";
+import { Navbar, Hero, TechStack, Projects, Contact } from "./components";
 
 // Create page components
 const Home = () => (
@@ -7,10 +7,12 @@ const Home = () => (
     <Hero />
     <TechStack />
     <Projects />
+    <Contact />
   </>
 );
 
 const ProjectsPage = () => <Projects />;
+const ContactPage = () => <Contact />;
 
 const App = () => (
   <BrowserRouter>
@@ -21,6 +23,7 @@ const App = () => (
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </div>
