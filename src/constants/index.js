@@ -19,6 +19,12 @@ export const navLinks = [
     },
 ];
 
+export const gradients = [
+    'bg-blue-500',
+    'bg-blue-400',
+    'bg-blue-700'
+]
+
 export const techStack = [
     { name: 'Java', icon: Java },
     { name: 'JavaScript', icon: javaScript },
