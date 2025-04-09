@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar, Hero, TechStack, Projects, Contact } from "./components";
 import { gradients } from "./constants";
 import { useState, useEffect } from 'react';
+import ParticleBackground from './components/Particles';
 
 // Create page components
 const Home = () => (
@@ -28,9 +29,13 @@ const App = () => {
   }, []);
 
   return (
+
     <BrowserRouter>
       <div className="bg-custom-dark w-full overflow-hidden relative">
-        {/* Animated gradient bar with fade to black */}
+        <div style={{ position: "absolute", width: "100%", height: "100%", zIndex: 1 }}>
+          <ParticleBackground />
+        </div>
+
         <div 
           className={`absolute top-0 left-0 right-0 h-[120px] z-50 ${gradients[gradientIndex]} opacity-15`} 
           style={{

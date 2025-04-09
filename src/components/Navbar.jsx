@@ -43,11 +43,11 @@ const Navbar = () => {
                 <img src={logo} alt="logo" className="w-[50px] h-[50px]" />
                 
                 {/* Desktop Navigation (Hidden on smaller screens) */}
-                <ul className="list-none md:flex hidden justify-end items-center flex-1">
+                <ul className="list-none text-gray-300 md:flex hidden justify-end items-center flex-1">
                     {navLinks.map((nav, index) => (
                         <li
                             key={nav.id}
-                            className={`font-roboto font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-white`}
+                            className={`font-roboto font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mr-10'} text-gray-300`}
                         >
                             <a 
                                 href={`#${nav.id}`}
@@ -85,7 +85,7 @@ const Navbar = () => {
                             {navLinks.map((nav, index) => (
                                 <li
                                     key={nav.id}
-                                    className={`font-roboto font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-white`}
+                                    className={`font-roboto font-normal cursor-pointer text-[16px] ${index === navLinks.length - 1 ? 'mr-0' : 'mb-4'} text-gray-300`}
                                 >
                                     <a 
                                         href={`#${nav.id}`}
