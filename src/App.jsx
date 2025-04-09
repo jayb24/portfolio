@@ -23,16 +23,25 @@ const App = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setGradientIndex((prevIndex) => (prevIndex + 1) % gradients.length);
-    }, 15000); // Change color every 30 seconds (much slower)
+    }, 15000);
     
     return () => clearInterval(timer);
   }, []);
 
   return (
-
     <BrowserRouter>
-      <div className="bg-custom-dark w-full overflow-hidden relative">
-        <div style={{ position: "absolute", width: "100%", height: "100%", zIndex: 1 }}>
+      <div className="bg-custom-dark w-full overflow-hidden relative min-h-screen">
+        {/* Particles container */}
+        <div 
+          className="absolute inset-0"
+          style={{ 
+            position: "absolute", 
+            width: "100%", 
+            height: "100vh", 
+            zIndex: 1,
+            pointerEvents: "none"
+          }}
+        >
           <ParticleBackground />
         </div>
 
@@ -41,12 +50,12 @@ const App = () => {
           style={{
             maskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 40%, transparent 100%)',
             WebkitMaskImage: 'linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 40%, transparent 100%)',
-            transition: 'background-color 8s ease', // Increased to 8 seconds for much slower transition
+            transition: 'background-color 8s ease',
             pointerEvents: 'none',
           }}
         ></div>
         
-        <div className="md:px-40 mx-auto">
+        <div className="md:px-40 mx-auto relative z-10">
           <Navbar />
           
           <Routes>
