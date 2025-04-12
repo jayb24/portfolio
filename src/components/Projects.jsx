@@ -49,8 +49,7 @@ const Projects = () => {
   return (
     <div className="w-full justify-center mx-auto px-8 py-12" id="projects">
       <div>
-        <h2 className="text-2xl text-white font-medium mb-1 text-left sm:text-center xs:text-center md:text-left">Projects</h2>
-        <div className="w-full h-0.5 bg-white mb-3"></div>
+        <h2 className="text-2xl text-gray-200 font-medium mb-3 text-left sm:text-center xs:text-center md:text-left">Projects</h2>
       </div>
       
       <div className="mt-0 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

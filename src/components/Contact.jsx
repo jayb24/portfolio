@@ -4,11 +4,10 @@ const Contact = () => {
   return (
     <div className="w-full mx-auto px-8 py-12" id="contact">
       <div>
-        <h2 className="text-2xl text-white font-medium mb-1 text-left sm:text-center xs:text-center md:text-left">Contact Me</h2>
-        <div className="w-full h-0.5 bg-white mb-3"></div>
+        <h2 className="text-2xl text-gray-200 font-medium mb-3 text-left sm:text-center xs:text-center md:text-left">Contact Me</h2>
       </div>
       
-      <div className="bg-black border-1.5 border-white rounded-lg p-6 max-w-2xl mx-auto">
+      <div className="bg-custom-dark border-.5 border-gray-200 rounded-lg p-6 max-w-2xl mx-auto">
         <div className="flex flex-col space-y-4">
           {/* Email */}
           <div className="flex items-center">

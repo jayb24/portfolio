@@ -1,7 +1,7 @@
 import { profile, github, linkedin, location, Eye } from "../assets";
 
 const Hero = () => (
-  <section id="home" className="flex flex-col w-full text-white py-16">
+  <section id="home" className="flex flex-col w-full text-gray-200 py-16">
     {/* Use max width and margin auto to center content like navbar */}
     <div className="mx-auto px-8">
       <div className="flex flex-col md:flex-row items-center md:items-start gap-6">
@@ -14,17 +14,17 @@ const Hero = () => (
 
         {/* Text Content - centered on mobile */}
         <div className="flex flex-col items-center text-center md:items-start md:text-left">
-          <span className="font-mono font-extralight text-xs text-gray-300 mb-2">Front-end Developer</span>
-          <h1 className="text-roboto text-gray-300 text-3xl font-medium mb-4">Hi, I'm Jayden Botha 🤝</h1>
+          <span className="font-mono font-extralight text-xs text-gray-200 mb-2">Front-end Developer</span>
+          <h1 className="text-roboto text-gray-200 text-3xl font-medium mb-4">Hi, I'm Jayden Botha 🤝</h1>
           
           {/* Location */}
-          <div className="flex text-sm items-center text-gray-300 mb-3">
+          <div className="flex text-sm items-center text-gray-200 mb-3">
             <img src={location} alt="location" className="w-4 h-4 mr-2" />
             <span>Orlando, FL</span>
           </div>
           
           {/* Bio */}
-          <p className="text-sm mb-4 text-gray-300">
+          <p className="text-sm mb-4 text-gray-200">
             A junior at the University of Central Florida pursuing a B.S. in Computer Science. I enjoy web development and great UI/UX design.
           </p>
           
